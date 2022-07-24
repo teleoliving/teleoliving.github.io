@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,35 +55,30 @@
                     cols="12"
                     tag="h1"
                   >
-                    <vue-countdown :time="2 * 24 * 60 * 60 * 1000" v-slot="{ days, hours, minutes, seconds }">
-                      Time Remaining：{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
-                    </vue-countdown>
-                    <span
-                    :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
-                      class="font-weight-light"
-                    >
-                      COMING
-                    </span>
-
                     <br>
-
-                    <span
-                      :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']"
-                      class="font-weight-black"
-                    >
-                      SOON
+                      <br>
+                      <span
+                              :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
+                              class="font-weight-light"
+                      >
+                      The first co-living community for Denver entrepeneurs to <b>grow</b>, <b>network</b>, and <b>build</b>
                     </span>
+
+                      <br>
+                      <br>
+
+                    <div data-tf-widget="Mxa9yFb2" data-tf-iframe-props="title=Teleo Endeavor House Application" data-tf-medium="snippet" style="width:100%;height:800px;"></div>
 
                   </v-col>
 
-                  <v-btn
-                    class="align-self-end"
-                    fab
-                    outlined
-                    @click="$vuetify.goTo('#about-me')"
-                  >
-                    <v-icon>mdi-chevron-double-down</v-icon>
-                  </v-btn>
+<!--                  <v-btn-->
+<!--                    class="align-self-end"-->
+<!--                    fab-->
+<!--                    outlined-->
+<!--                    @click="$vuetify.goTo('#about-me')"-->
+<!--                  >-->
+<!--                    <v-icon>mdi-chevron-double-down</v-icon>-->
+<!--                  </v-btn>-->
                 </v-row>
               </v-container>
             </v-theme-provider>
@@ -103,13 +100,13 @@
  </div>
  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-<script src="https://unpkg.com/@chenfengyuan/vue-countdown@2"></script>
-<script type="module" src="@chenfengyuan/vue-countdown"></script>
+<script src="https://embed.typeform.com/next/embed.js"></script>
+
 
  <script>
    new Vue({
+
     el: '#app',
-     components: [VueCountdown],
     vuetify: new Vuetify(),
     startCountdown: function () {
       this.counting = true;
